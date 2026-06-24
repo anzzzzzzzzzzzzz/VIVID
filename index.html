@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIVID – Contemporary Art Exhibition</title>
+  <link rel="stylesheet" href="css/dstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- アート画像のプリロード -->
+  <link rel="preload" as="image" href="images/art1.jpg">
+  <link rel="preload" as="image" href="images/art2.jpg">
+  <link rel="preload" as="image" href="images/art3.jpg">
+  <link rel="preload" as="image" href="images/art4.jpg">
+  <link rel="preload" as="image" href="images/art5.jpg">
+  <link rel="preload" as="image" href="images/art6.jpg">
+  <link rel="preload" as="image" href="images/art7.jpg">
+  <link rel="preload" as="image" href="images/art8.jpg">
+  <link rel="preload" as="image" href="images/art9.jpg">
+  <link rel="preload" as="image" href="images/art10.jpg">
+  <link rel="preload" as="image" href="images/art11.jpg">
+  <link rel="preload" as="image" href="images/art12.jpg">
+</head>
+
+<body>
+
+  <header>
+    <h1 id="top"><a href="#">VIVID</a></h1>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="header_menu" id="header_menu">
+      <ul>
+        <li class="nav_about"><a href="#about">About</a></li>
+        <li class="nav_artists"><a href="#artists">Artists</a></li>
+        <li class="nav_access"><a href="#access">Access</a></li>
+        <li class="nav_tickets"><a href="#tickets">Tickets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ヒーロー -->
+    <section class="hero">
+      <div class="slideshow">
+        <img src="images/photo1.jpg" alt="展示画像1" class="slide active">
+        <img src="images/photo2.jpg" alt="展示画像2" class="slide">
+        <img src="images/photo3.jpg" alt="展示画像3" class="slide">
+      </div>
+      <div class="hero_overlay"></div>
+      <div class="hero_content">
+        <p class="hero_sub">Contemporary Art Exhibition</p>
+        <h2 class="hero_title">VIVID</h2>
+        <p class="hero_copy">"Where art speaks, silence listens."</p>
+        <a href="#tickets" class="hero_btn">Tickets</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="about_inner">
+        <div class="about_image">
+          <img src="images/about.png" alt="不思議な階段の上に立つ人々">
+        </div>
+        <div class="about_text">
+          <span class="section_label">About</span>
+          <h2 class="about_title">視点を変えれば、<br>未来はもっと鮮明に映る。</h2>
+          <p class="about_desc">
+            見慣れた景色や当たり前の日常に、デザインという光を当てることで新しい世界が見えてきます。
+            本展では、鋭い視点と自由な発想で未来を切り拓く「VIVID」なアイデアを一堂に集めました。
+            これからの時代をより鮮やかに、より面白く生きるためのヒントがここにあります。
+          </p>
+          <p class="about_date">2025.4.1 – 2025.6.30</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artists -->
+    <section id="artists">
+      <span class="section_label artists_label">Artists</span>
+      <div class="artists_inner">
+
+        <!-- 左：メイン表示エリア -->
+        <div class="artists_main">
+          <div class="main_image_wrap">
+            <img src="images/art1.jpg" alt="" class="main_image active">
+            <img src="images/art2.jpg" alt="" class="main_image">
+            <img src="images/art3.jpg" alt="" class="main_image">
+            <img src="images/art4.jpg" alt="" class="main_image">
+            <img src="images/art5.jpg" alt="" class="main_image">
+            <img src="images/art6.jpg" alt="" class="main_image">
+            <img src="images/art7.jpg" alt="" class="main_image">
+            <img src="images/art8.jpg" alt="" class="main_image">
+            <img src="images/art9.jpg" alt="" class="main_image">
+            <img src="images/art10.jpg" alt="" class="main_image">
+            <img src="images/art11.jpg" alt="" class="main_image">
+            <img src="images/art12.jpg" alt="" class="main_image">
+          </div>
+          <div class="main_info">
+            <p class="main_title">作品名 01</p>
+            <p class="main_artist">Artist Name 01</p>
+          </div>
+        </div>
+
+        <!-- 右：サムネイルグリッド -->
+        <div class="artists_grid">
+          <div class="thumb_item" data-title="作品名 01" data-artist="Artist Name 01">
+            <img src="images/art1.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 02" data-artist="Artist Name 02">
+            <img src="images/art2.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 03" data-artist="Artist Name 03">
+            <img src="images/art3.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 04" data-artist="Artist Name 04">
+            <img src="images/art4.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 05" data-artist="Artist Name 05">
+            <img src="images/art5.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 06" data-artist="Artist Name 06">
+            <img src="images/art6.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 07" data-artist="Artist Name 07">
+            <img src="images/art7.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 08" data-artist="Artist Name 08">
+            <img src="images/art8.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 09" data-artist="Artist Name 09">
+            <img src="images/art9.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 10" data-artist="Artist Name 10">
+            <img src="images/art10.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 11" data-artist="Artist Name 11">
+            <img src="images/art11.jpg" alt="">
+          </div>
+          <div class="thumb_item" data-title="作品名 12" data-artist="Artist Name 12">
+            <img src="images/art12.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Access -->
+    <section id="access">
+      <div class="access_wrap">
+        <span class="section_label">Access</span>
+        <div class="access_overview">
+          <table class="overview_table">
+            <tr>
+              <th>会期</th>
+              <td>2025年4月1日（火）〜 2025年6月30日（月）</td>
+            </tr>
+            <tr>
+              <th>開館時間</th>
+              <td>10:00 〜 20:00（最終入館 19:30）</td>
+            </tr>
+            <tr>
+              <th>休館日</th>
+              <td>毎週月曜日（祝日の場合は翌日）</td>
+            </tr>
+            <tr>
+              <th>会場</th>
+              <td>VIVID ART CENTER　東京都渋谷区〇〇1-2-3</td>
+            </tr>
+            <tr>
+              <th>入場料</th>
+              <td>一般 1,500円 / 学生 800円 / 中学生以下 無料</td>
+            </tr>
+          </table>
+        </div>
+        <div class="access_bottom">
+          <div class="access_info">
+            <p class="access_info_label">アクセス</p>
+            <dl class="access_list">
+              <dt>電車でお越しの方</dt>
+              <dd>○○線「渋谷駅」A3出口より徒歩5分</dd>
+              <dt>お車でお越しの方</dt>
+              <dd>近隣コインパーキングをご利用ください</dd>
+              <dt>住所</dt>
+              <dd>〒150-0000　東京都渋谷区〇〇1-2-3</dd>
+            </dl>
+          </div>
+          <div class="access_map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747977679055!2d139.6980!3d35.6580!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDM5JzI4LjgiTiAxMznCsDQxJzUyLjgiRQ!5e0!3m2!1sja!2sjp!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tickets -->
+    <section id="tickets">
+      <div class="tickets_wrap">
+        <span class="section_label">Tickets</span>
+        <h2 class="tickets_title">チケット</h2>
+        <p class="tickets_desc">オンラインでの事前購入がおすすめです。当日券は会場窓口でもお求めいただけます。</p>
+        <div class="tickets_grid">
+          <div class="ticket_card">
+            <p class="ticket_type">一般</p>
+            <p class="ticket_price">¥1,500</p>
+            <ul class="ticket_notes">
+              <li>高校生以上対象</li>
+              <li>当日券：¥1,800</li>
+            </ul>
+            <a href="#" class="ticket_btn">購入する</a>
+          </div>
+          <div class="ticket_card">
+            <p class="ticket_type">学生</p>
+            <p class="ticket_price">¥800</p>
+            <ul class="ticket_notes">
+              <li>学生証提示が必要です</li>
+              <li>当日券：¥1,000</li>
+            </ul>
+            <a href="#" class="ticket_btn">購入する</a>
+          </div>
+          <div class="ticket_card">
+            <p class="ticket_type">中学生以下</p>
+            <p class="ticket_price">無料</p>
+            <ul class="ticket_notes">
+              <li>保護者同伴が必要です</li>
+              <li>当日窓口にてお申し付けください</li>
+            </ul>
+            <a href="#" class="ticket_btn">窓口で受け取る</a>
+          </div>
+        </div>
+        <p class="tickets_note">※ 障がい者手帳をお持ちの方および付添者1名は半額となります。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer_wrap">
+      <div class="footer_top">
+        <p class="footer_logo">VIVID</p>
+        <p class="footer_sub">Contemporary Art Exhibition</p>
+      </div>
+      <div class="footer_middle">
+        <nav class="footer_nav">
+          <a href="#about">About</a>
+          <a href="#artists">Artists</a>
+          <a href="#access">Access</a>
+          <a href="#tickets">Tickets</a>
+        </nav>
+        <div class="footer_sns">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p class="footer_copy">&copy; 2025 VIVID Contemporary Art Exhibition. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
